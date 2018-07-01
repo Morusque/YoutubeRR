@@ -1,0 +1,22 @@
+
+{
+
+  "manifest_version": 2,
+  "name": "youtuberecomremover",
+  "version": "1.1.1",
+  
+  "description": "removes recommended videos on youtube",
+
+  "icons": {
+    "48": "icons/border-48.png",
+	"96": "icons/border-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+	  "js": ["youtuberecomremover.js"]
+    }
+  ]
+
+}
